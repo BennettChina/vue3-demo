@@ -1,0 +1,9 @@
+version: '3'
+services:
+  vue3-demo:
+    build: .
+    image: vue3-demo:latest
+    container_name: vue3-demo
+    ports:
+      - "8080:80"
+    restart: on-failure
